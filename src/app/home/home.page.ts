@@ -30,7 +30,10 @@ export class HomePage {
         },
         {
           text: 'Adicionar',
-          handler: ()=> {console.log('Incluir a tarefa')}
+          handler: (form)=> {
+                            let obj ={descricao: form.task, status: false};
+            
+                            this.tarefas.push(obj)}
         }
 
       ]
